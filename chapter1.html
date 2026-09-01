@@ -1,330 +1,420 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Chapter 1: Computer Fundamentals</title>
+    <title>Chapter 1: Computer Fundamentals</title>
 </head>
-<body>
-<h1><a href="TableofContents.html">Back to Table of content</a></h1>
-<b><h1>CHAPTER 1</h1></b>
-<hr class="double-line">
- <h2>Introduction to Computers and Computer Systems</h2>
-
-  <hr>
-
-  <h2>1.1 Introduction of Computer</h2>
-  <p>A computer is an advanced electronic device that accepts raw data as input, stores and processes that data according to a set of programmed instructions, and produces meaningful information as output. Modern society relies heavily on computing infrastructure for everything from global telecommunications to desktop automation.</p>
-
-  <h3>1.1.1 Definition, Characteristics, and Applications of Computer</h3>
-  <p>At its foundation, a computer functions under the Input-Process-Output (IPO) model. Raw data (facts, numbers, symbols) enters the machine, undergoes algorithmic manipulation in the central processor, and is converted into structured information usable by humans or other automated systems.</p>
-
-  <p><b>Core Characteristics of Computers:</b></p>
-  <ul>
-    <li><b>Speed:</b> Computers perform calculations in fractions of a second (nanoseconds and picoseconds). For example, a modern multi-GHz processor executes billions of instructions per second.</li>
-    <li><b>Accuracy:</b> Computers execute tasks with high precision. Errors generally stem from human programming mistakes or incorrect input data (known as <i>Garbage In, Garbage Out</i> or GIGO).</li>
-    <li><b>Diligence:</b> Unlike humans, computers do not suffer from physical tiredness, lack of concentration, or boredom. A computer can run repetitive tasks continuously for long durations without degrading operational performance.</li>
-    <li><b>Versatility:</b> A single computer system can perform vastly different tasks sequentially or simultaneously—ranging from typing a text document to rendering 3D graphics or analyzing weather patterns.</li>
-    <li><b>Storage Capacity:</b> Computers store massive volumes of data in compact spaces, using primary volatile memory and non-volatile secondary storage media for quick retrieval.</li>
-    <li><b>Automation:</b> Once a program is loaded into memory, a computer can execute its instructions sequentially without requiring manual human intervention at every step.</li>
-  </ul>
-
-  <p><b>Key Application Domains:</b></p>
-  <ul>
-    <li><b>Education:</b> Powering E-learning platforms, virtual classrooms, digital libraries, and academic research database tools.</li>
-    <li><b>Healthcare:</b> Operating diagnostic imaging equipment (CT scanners, MRI machines), patient monitoring software, and electronic medical health records.</li>
-    <li><b>Banking & Finance:</b> Managing Core Banking Systems (CBS), handling global electronic fund transfers (SWIFT), running Automated Teller Machines (ATMs), and executing algorithmic stock trading.</li>
-    <li><b>Science & Engineering:</b> Running Computer-Aided Design (CAD) software for architectural modeling, space exploration simulations, and molecular biology analysis.</li>
-    <li><b>Business & Industry:</b> Automating Enterprise Resource Planning (ERP), inventory management, digital point-of-sale billing, and corporate payroll processing.</li>
-  </ul>
-
-  <h3>1.1.2 Evolution of Computer Technology</h3>
-  <p>The history of computing spans thousands of years, starting with mechanical counting tools like the Abacus (developed around 2500 BCE) and progressing through mechanical calculators like Blaise Pascal's <i>Pascaline</i> (1642) and Charles Babbage's <i>Difference Engine</i> and <i>Analytical Engine</i> in the 19th century. Babbage's Analytical Engine introduced concepts of input, processing, memory, and output, earning him the title of the "Father of Computing."</p>
-
-  <p>Modern electronic computing is divided into five distinct generations based on underlying hardware technology:</p>
-
-  <ul>
-    <li><b>First Generation (1940–1956): Vacuum Tubes</b><br>
-    Utilized fragile, heat-producing glass vacuum tubes for circuitry and magnetic drums for memory. These machines were massive, consumed huge amounts of electricity, and were programmed in machine language.<br>
-    <i>Examples:</i> ENIAC (Electronic Numerical Integrator and Computer), UNIVAC-I, EDVAC.</li>
-
-    <li><b>Second Generation (1956–1963): Transistors</b><br>
-    Replaced bulky vacuum tubes with solid-state semiconductor transistors. This reduced computer size, lowered power consumption, and increased processing speeds. Assembly language and early high-level languages like FORTRAN and COBOL were introduced.<br>
-    <i>Examples:</i> IBM 7094, CDC 1604, UNIVAC 1107.</li>
-
-    <li><b>Third Generation (1964–1971): Integrated Circuits (ICs)</b><br>
-    Combined hundreds of microscopic transistors onto a single silicon chip (Integrated Circuit). This micro-miniaturization boosted calculation speeds while drastically lowering production costs. Users interacted with systems using keyboards, monitors, and early operating systems.<br>
-    <i>Examples:</i> IBM System/360, PDP-8, Honeywell-6000.</li>
-
-    <li><b>Fourth Generation (1971–Present): Microprocessors (VLSI / ULSI)</b><br>
-    Utilized Very Large Scale Integration (VLSI) and Ultra Large Scale Integration (ULSI) to place millions—and eventually billions—of transistors onto a single microchip (Central Processing Unit). This generation launched personal computers (PCs), laptops, and handheld mobile devices.<br>
-    <i>Examples:</i> Intel 8086/Pentium series, modern Apple M-series chips, desktop PCs, microcomputers.</li>
-
-    <li><b>Fifth Generation (Present & Beyond): Artificial Intelligence & Quantum Computing</b><br>
-    Focuses on hardware and software architectures that enable parallel processing, neural networks, machine learning, natural language processing, and quantum mechanics. The goal is to build machines capable of self-learning, pattern recognition, and autonomous decision-making.<br>
-    <i>Examples:</i> AI supercomputer clusters, quantum processors (Google Sycamore, IBM Quantum), robotics.</li>
-  </ul>
-
-  <h3>1.1.3 Measurement Unit of Processing Speed and Storage Unit</h3>
-  <p>To evaluate system performance and capacity, computing relies on standardized metric units for data storage and execution speed.</p>
-
-  <p><b>Storage Measurement Units:</b><br>
-  The basic unit of digital data is a <b>Bit</b> (Binary Digit), representing a single binary state of 0 or 1. Data storage scales upward in standardized byte multiples:</p>
-
-  <ul>
-    <li><b>1 Nibble</b> = 4 bits</li>
-    <li><b>1 Byte (B)</b> = 8 bits (stores a single ASCII text character)</li>
-    <li><b>1 Kilobyte (KB)</b> = 1,024 Bytes ($2^{10}$ Bytes)</li>
-    <li><b>1 Megabyte (MB)</b> = 1,024 KB ($2^{20}$ Bytes)</li>
-    <li><b>1 Gigabyte (GB)</b> = 1,024 MB ($2^{30}$ Bytes)</li>
-    <li><b>1 Terabyte (TB)</b> = 1,024 GB ($2^{40}$ Bytes)</li>
-    <li><b>1 Petabyte (PB)</b> = 1,024 TB ($2^{50}$ Bytes)</li>
-    <li><b>1 Exabyte (EB)</b> = 1,024 PB ($2^{60}$ Bytes)</li>
-  </ul>
-
-  <p><b>Processing Speed Measurement Units:</b><br>
-  Processor execution rates were historically measured in instructions per second: <b>MIPS</b> (Millions of Instructions Per Second) or <b>FLOPS</b> (Floating-Point Operations Per Second) for scientific computing. Modern Central Processing Unit speed is primarily measured by internal clock frequency in <b>Hertz (Hz)</b>:</p>
-
-  <ul>
-    <li><b>Megahertz (MHz):</b> Millions of clock cycles per second.</li>
-    <li><b>Gigahertz (GHz):</b> Billions of clock cycles per second (e.g., a 3.5 GHz CPU completes $3.5 \times 10^9$ cycles per second).</li>
-  </ul>
-
-  <h3>1.1.4 Super, Mainframe, Mini, and Microcomputers</h3>
-  <p>Computers are categorized into four major classes based on processing capacity, physical size, cost, and typical deployment scenarios:</p>
-
-  <ul>
-    <li><b>Supercomputers:</b><br>
-    The fastest, largest, and most expensive computers available. Supercomputers use thousands of interconnected parallel processors to solve complex, compute-heavy scientific problems. Performance is measured in Petaflops or Exaflops.<br>
-    <i>Examples:</i> Frontier (HPE), Fugaku (RIKEN/Fujitsu), Summit (IBM).<br>
-    <i>Use Cases:</i> Climate simulation, nuclear physics modeling, global weather forecasting, satellite trajectory calculations.</li>
-
-    <li><b>Mainframe Computers:</b><br>
-    High-performance enterprise computers designed to process massive volumes of concurrent transactions and input/output requests reliably. Mainframes prioritize high data throughput and system availability over pure calculation speed.<br>
-    <i>Examples:</i> IBM zSeries (z16), UNISYS ClearPath.<br>
-    <i>Use Cases:</i> Core banking database transactions, airline reservation platforms, national census data processing.</li>
-
-    <li><b>Minicomputers (Midrange Computers):</b><br>
-    Multi-user systems scaled between personal microcomputers and enterprise mainframes. They support dozens to hundreds of concurrent users within small-to-medium businesses or academic departments.<br>
-    <i>Examples:</i> DEC VAX series, AS/400 (IBM System i).<br>
-    <i>Use Cases:</i> Industrial process automation, departmental database hosting, enterprise manufacturing control.</li>
-
-    <li><b>Microcomputers:</b><br>
-    Single-user computers powered by a single microprocessor chip. They are small, affordable, and common in home, school, and office environments.<br>
-    <i>Examples:</i> Desktop Personal Computers (PCs), Laptops, Workstations, Tablet computers.<br>
-    <i>Use Cases:</i> Office document creation, web browsing, multimedia editing, educational software usage.</li>
-  </ul>
-
-  <h3>1.1.5 Mobile Computing and its Applications</h3>
-  <p>Mobile computing is a technology framework that allows users to access, transmit, and process data wirelessly without being anchored to a fixed physical location. It combines mobile hardware (smartphones, tablets, wearables), mobile communication networks (Cellular 4G/5G, Wi-Fi, Bluetooth), and specialized mobile operating systems (Android, iOS).</p>
-
-  <p><b>Key Characteristics of Mobile Computing:</b></p>
-  <ul>
-    <li><b>Portability:</b> Lightweight hardware designed to be carried easily by hand or worn on the body.</li>
-    <li><b>Wireless Connectivity:</b> Continuous network communication using radio frequencies without physical network cables.</li>
-    <li><b>Location Awareness:</b> Integrated Global Positioning System (GPS) chips enable location-based services and real-time spatial navigation.</li>
-  </ul>
-
-  <p><b>Applications of Mobile Computing:</b></p>
-  <ul>
-    <li><b>Mobile Banking (M-Banking):</b> Executing real-time digital fund transfers, balance inquiries, and utility bill payments using mobile wallet apps (e.g., eSewa, Khalti, Google Pay).</li>
-    <li><b>Location-Based Ride-Hailing & Navigation:</b> On-demand transportation platforms (e.g., Pathao, InDrive, Uber) and real-time mapping services (e.g., Google Maps).</li>
-    <li><b>Mobile Commerce (M-Commerce):</b> Browsing, purchasing, and tracking physical goods via mobile storefront apps (e.g., Daraz, Amazon).</li>
-    <li><b>Remote Field Operations & Telemedicine:</b> Enabling remote workers, emergency responders, and field engineers to capture data on-site, upload real-time reports, or consult medical professionals via video calls.</li>
-  </ul>
-
-  <hr>
-
-  <h2>1.2 Computer System and I/O Devices</h2>
-
-  <Image src="image_agent_tag_7164754555231716368" alt="Structural diagram of computer architecture showing Input Unit, CPU, Main Memory, and Output Unit" caption="Functional block diagram of computer architecture" />
-
-  <p>A computer system is an integrated assembly of hardware components and software applications designed to perform data processing tasks. Understanding how these sub-systems communicate requires looking at their architectural blueprints and physical hardware components.</p>
-
-  <h3>1.2.1 Concept of Computer Architecture and Organization</h3>
-  <p>Although closely related, computer architecture and computer organization describe different levels of computer design:</p>
-
-  <ul>
-    <li><b>Computer Architecture:</b> Refers to the logical and functional attributes of a computer system visible to a programmer. It includes the Instruction Set Architecture (ISA), supported data types, register configurations, addressing modes, and memory access mechanisms.<br>
-    <i>Example:</i> Deciding whether a processor uses an x86 or ARM instruction set.</li>
-
-    <li><b>Computer Organization:</b> Refers to the operational hardware units and their physical interconnections that implement the architectural specifications. It focuses on signal timings, bus structures, memory control logic, and physical circuit layouts.<br>
-    <i>Example:</i> Designing a specific 3.2 GHz circuit board with a 12 MB L3 cache to execute an ARM instruction set.</li>
-  </ul>
-
-  <p>The dominant baseline model for modern general-purpose computing is the <b>Von Neumann Architecture</b>. It dictates that both program instructions and working data reside together in a shared central memory space, fetched sequentially by the central processor over a shared system bus.</p>
-
-  <h3>1.2.2 Components of Computer System</h3>
-  <p>A complete computer system consists of five hardware units working together:</p>
-
-  <ul>
-    <li><b>Input Unit:</b> Hardware peripherals that capture external data/commands from human operators or environmental sensors and convert them into binary machine signals.</li>
-    <li><b>Output Unit:</b> Peripherals that take processed binary data from the computer system and translate it into human-readable text, graphics, sound, or physical actions.</li>
-    <li><b>Processing Unit (CPU):</b> The primary engine that executes software instructions, performs arithmetic/logical operations, and coordinates data flow across all other units.</li>
-    <li><b>Memory Unit (Primary Memory):</b> High-speed internal semiconductor storage that holds currently executing program code, operating system files, and active data for fast access by the processor.</li>
-    <li><b>Storage Unit (Secondary Memory):</b> High-capacity non-volatile storage media designed to preserve data, software applications, and files long-term, even when the computer system is powered off.</li>
-  </ul>
-
-  <h3>1.2.3 Microprocessor: Basic Concepts, Clock Speed, Word Length, Components, and Functions</h3>
-  <p>A microprocessor is an integrated circuit built on a single semiconductor microchip that contains the complete Central Processing Unit (CPU) of a computer system.</p>
-
-  <p><b>Core Metrics of Microprocessors:</b></p>
-  <ul>
-    <li><b>Clock Speed:</b> The internal frequency generator signal that synchronizes execution steps within the microprocessor. Measured in Gigahertz (GHz), a higher clock speed allows more instruction steps per second.</li>
-    <li><b>Word Length (Word Size):</b> The maximum number of binary bits a microprocessor can process or transfer in a single parallel clock cycle (e.g., 32-bit vs. 64-bit architectures). A 64-bit CPU can process 64 bits of data at once and address vastly larger RAM capacities than a 32-bit CPU.</li>
-  </ul>
-
-  <p><b>Primary Internal Components of a Microprocessor:</b></p>
-  <ul>
-    <li><b>Arithmetic Logic Unit (ALU):</b> Performs execution of fundamental operations, including arithmetic calculations (addition, subtraction, multiplication) and logical comparisons (AND, OR, NOT, equality checks).</li>
-    <li><b>Control Unit (CU):</b> Acts as the central supervisor. It fetches program instructions from main memory, decodes them into control signals, and directs the movement of data between the ALU, registers, and external peripherals.</li>
-    <li><b>Register Array:</b> Small, high-speed internal storage locations inside the CPU die used to hold temporary data values, instruction memory addresses, and status flags during active execution cycles (e.g., Program Counter, Accumulator, Instruction Register).</li>
-  </ul>
-
-  <h3>1.2.4 Bus System: Data Bus, Address Bus, and Control Bus</h3>
-  <p>A bus system is a collection of parallel physical wires or printed circuit board traces used to transmit signal data, memory addresses, and control commands between the CPU, primary memory, and peripheral expansion units.</p>
-
-  <p>The system bus is divided into three functional signal lines:</p>
-
-  <ul>
-    <li><b>Data Bus:</b> A <i>bidirectional</i> line group that transfers actual binary data payload values back and forth between the CPU, RAM, and storage controllers. The width of the data bus (e.g., 64 bits) dictates how much data can be moved in a single transfer cycle.</li>
-    <li><b>Address Bus:</b> A <i>unidirectional</i> line group driven exclusively by the CPU to select specific physical memory address locations or I/O ports for reading or writing operations. The width of the address bus determines the system's maximum addressable memory capacity ($2^N$ addressable bytes, where $N$ is line width).</li>
-    <li><b>Control Bus:</b> A set of individual signal lines that convey command timing signals, system status checks, interrupt requests, and read/write execution commands generated by the Control Unit (e.g., MEMORY READ, I/O WRITE, BUS RESET).</li>
-  </ul>
-
-  <h3>1.2.5 Primary Memory: Definition, RAM, ROM, Cache, Buffer, Types of RAM and ROM</h3>
-  <p>Primary Memory (main memory) refers to semiconductor storage accessible directly by the CPU via the internal system bus. It holds active operating system instructions, running applications, and working data required for immediate execution.</p>
-
-  <p><b>Random Access Memory (RAM):</b><br>
-  A <i>volatile</i> memory workspace that allows data to be read from or written to any physical address location in roughly the same amount of time. RAM requires constant electrical power to maintain its stored data; turning off the system clears its contents.</p>
-  <ul>
-    <li><b>SRAM (Static RAM):</b> Uses transistor flip-flop circuits to store binary bits. SRAM is fast, does not require periodic electronic refreshing, and is expensive—making it ideal for internal CPU cache structures.</li>
-    <li><b>DRAM (Dynamic RAM):</b> Uses miniaturized single-transistor and capacitor pairs to store data as electrical charges. Because capacitors leak charge over time, DRAM requires periodic electronic refresh cycles every few milliseconds. DRAM offers high density at a lower cost, making it the primary standard for main memory modules (e.g., DDR4, DDR5 RAM).</li>
-  </ul>
-
-  <p><b>Read-Only Memory (ROM):</b><br>
-  A <i>non-volatile</i> semiconductor memory format designed to retain factory-written boot code (such as System BIOS/UEFI firmware) permanently, even when system power is disconnected.</p>
-  <ul>
-    <li><b>PROM (Programmable ROM):</b> Blank ROM chips that can be written to once using a specialized high-voltage programming device. Once written, the contents cannot be altered.</li>
-    <li><b>EPROM (Erasable Programmable ROM):</b> ROM chips whose contents can be erased by exposing the chip die to intense ultraviolet (UV) light through a quartz window, allowing it to be reprogrammed.</li>
-    <li><b>EEPROM (Electrically Erasable Programmable ROM):</b> Modern non-volatile memory that can be erased and rewritten electrically byte-by-byte without physical removal from the circuit board (used in modern flash BIOS microchips).</li>
-  </ul>
-
-  <p><b>Cache Memory:</b><br>
-  A small, extremely fast SRAM buffer situated physically close to or directly inside the CPU die. Cache stores copies of frequently accessed instructions and data from main DRAM, reducing processor wait times. Modern microprocessors use multi-tiered caches: <b>L1 Cache</b> (fastest, smallest, built into each CPU core), <b>L2 Cache</b> (slightly larger and slower), and <b>L3 Cache</b> (shared across all CPU cores on the chip).<br>
-  <i>Real-World Analogy:</i> Think of RAM as a bookshelf in your office, while Cache is the small stack of papers sitting directly on your desk for immediate reference.</p>
-
-  <p><b>Data Buffer:</b><br>
-  A temporary block of physical memory reserved to hold data while it is being transferred between two devices operating at different speeds, or between hardware devices with different priorities (e.g., a printer buffer holding print jobs sent from a fast CPU).</p>
-
-  <h3>1.2.6 Secondary Memory: Definition, Magnetic Disk, Flash Memory, Optical Disk, External Storage Device, and Memory Stick</h3>
-  <p>Secondary memory refers to non-volatile, persistent storage devices situated outside the primary system bus. Secondary memory preserves software, files, and operating systems permanently, offering lower costs per gigabyte at slower access speeds than primary RAM.</p>
-
-  <ul>
-    <li><b>Magnetic Disk (Hard Disk Drive - HDD):</b> Uses rotating aluminum or glass platters coated with magnetic material. Read/write heads hover over microscopic tracks to change magnetic polarities representing binary bits. HDDs offer high capacity at low cost, but mechanical components make them susceptible to physical shock and slower read/write speeds.</li>
-    <li><b>Flash Memory:</b> Solid-state non-volatile storage that uses floating-gate NAND integrated circuits to retain data electronically without moving parts. Flash storage powers Solid State Drives (SSDs), offering faster read/write speeds, lower power consumption, and better drop resistance than traditional HDDs.</li>
-    <li><b>Optical Disks:</b> Circular plastic disks that record data using microscopic pits and lands burned into a reflective aluminum layer, read back using focused laser diodes.
-      <ul>
-        <li><i>CD (Compact Disc):</i> ~700 MB storage capacity.</li>
-        <li><i>DVD (Digital Versatile Disc):</i> ~4.7 GB (Single Layer) to 8.5 GB (Dual Layer) capacity.</li>
-        <li><i>Blu-ray Disc (BD):</i> Uses short-wavelength blue-violet lasers to store 25 GB to 100+ GB of high-definition video data.</li>
-      </ul>
-    </li>
-    <li><b>External Storage Devices:</b> Portable desktop enclosures housing external HDDs or external NVMe SSDs, connected via high-speed USB or Thunderbolt interfaces for portable data backups.</li>
-    <li><b>Memory Stick / USB Flash Drive:</b> Compact, thumb-sized portable storage drives using flash memory chips integrated with a standard USB connector plug.</li>
-  </ul>
-
-  <h3>1.2.7 Input Devices</h3>
-  <p>Input devices capture external signals, human interactions, or paper document data and translate them into binary format for processing.</p>
-
-  <ul>
-    <li><b>Keyboard:</b> The primary alphanumeric input device. Pressing a key closes a matrix circuit, sending a distinct scan-code signal to the system controller.<br>
-    <i>Example:</i> A standard 104-key QWERTY layout desktop keyboard.</li>
-
-    <li><b>Mouse:</b> A hand-held pointing device that detects two-dimensional movement across a surface using an optical sensor LED, translating that movement into screen cursor motion.<br>
-    <i>Example:</i> A dual-button optical mouse with a center scroll wheel.</li>
-
-    <li><b>Scanner:</b> An optical input device that scans physical paper documents or photographs and converts them into digital bitmap image files.<br>
-    <i>Example:</i> A desktop flatbed document scanner.</li>
-
-    <li><b>Light Pen:</b> A light-sensitive stylus connected to a display monitor. It detects vector screen positioning when its tip passes over display phosphors or screen pixels.<br>
-    <i>Example:</i> Stylus tools used on specialized CRT engineering graphics displays.</li>
-
-    <li><b>OMR (Optical Mark Reader):</b> An optical scanner that detects light reflection levels off paper sheets to identify pre-designated marked areas (such as pencil bubbles).<br>
-    <i>Example:</i> Automated scoring machines for multiple-choice exams.</li>
-
-    <li><b>OCR (Optical Character Recognition):</b> A combination of scanner hardware and software algorithms that reads printed or handwritten text characters on paper images and converts them into editable text documents.<br>
-    <i>Example:</i> Digitizing printed historical books into searchable PDF files.</li>
-
-    <li><b>BCR (Barcode Reader):</b> A handheld optical sensor that shines a red laser or LED light across black-and-white parallel lines (barcodes), measuring reflected light patterns to read product code numbers.<br>
-    <i>Example:</i> Point-of-Sale inventory checkout scanners in retail stores.</li>
-
-    <li><b>MICR (Magnetic Ink Character Recognition):</b> A specialized reader system that reads characters printed with magnetic iron-oxide ink. Used primarily in the banking industry to validate financial checks.<br>
-    <i>Example:</i> Bank check processing machines reading routing and account numbers.</li>
-
-    <li><b>Touch Screen:</b> An interactive display screen overlaid with a touch-sensitive panel (capacitive or resistive) that senses physical finger gestures as input coordinates.<br>
-    <i>Example:</i> Modern smartphone displays and interactive ATM touch panels.</li>
-
-    <li><b>Microphone:</b> An acoustic transducer device that converts physical sound waves into electrical audio signals, digitized by a computer sound card.<br>
-    <i>Example:</i> A noise-canceling headset microphone used for VoIP calls.</li>
-
-    <li><b>Digital Camera:</b> An optical device that focuses light through glass lenses onto an electronic image sensor (CCD or CMOS array), capturing photos or videos directly as digital files.<br>
-    <i>Example:</i> A mirrorless digital camera or integrated smartphone camera module.</li>
-  </ul>
-
-  <h3>1.2.8 Output Devices</h3>
-
-  <Image src="image_agent_tag_7164754555231716489" alt="Collection of computer hardware output devices including desktop monitors, printers, and speakers" caption="Standard computer hardware output peripherals" />
-
-  <p>Output devices translate processed binary data from a computer system into human-readable visual text, graphics, hard-copy prints, or audible sound signals.</p>
-
-  <p><b>1. Display Monitors (Soft-Copy Output):</b></p>
-  <ul>
-    <li><b>LCD (Liquid Crystal Display):</b> Flat-panel monitors that use liquid crystal molecules sandwiched between polarizing glass plates. Electrical currents tilt the crystals to pass or block light, illuminated by a Cold Cathode Fluorescent Lamp (CCFL) backlight.</li>
-    <li><b>LED (Light Emitting Diode):</b> An enhanced version of LCD technology that replaces CCFL tubes with energy-efficient Light Emitting Diodes (LEDs) for backlighting. This offers thinner display profiles, higher color contrast, and lower energy usage.</li>
-  </ul>
-
-  <p><b>2. Printers (Hard-Copy Output):</b></p>
-  <ul>
-    <li><b>Dot Matrix Printer (Impact Printer):</b> Uses small metal pins that strike an inked fabric ribbon against paper to produce text made of individual dots. They are noisy and produce low-resolution prints, but can print multi-part carbon copy forms.<br>
-    <i>Example:</i> Bank receipt printers and utility billing carbon copy machines.</li>
-
-    <li><b>Inkjet Printer (Non-Impact Printer):</b> Sprays microscopic drops of liquid ink through fine nozzles onto paper sheets to construct high-resolution text and color graphics.<br>
-    <i>Example:</i> Desktop home color photo printers.</li>
-
-    <li><b>Laser Printer (Non-Impact Printer):</b> Uses a rotating drum, static electricity, a focused laser beam, and dry black/colored powdered ink (toner). The laser creates an electrostatic image on the drum, toner adheres to the charged areas, and hot rollers fuse the powder onto paper for fast, sharp output.<br>
-    <i>Example:</i> High-volume commercial office printers.</li>
-  </ul>
-
-  <p><b>3. Speakers (Audio Output):</b></p>
-  <ul>
-    <li>Electromechanical transducers that convert analog audio signals from a sound card into physical sound waves using a voice coil and speaker cone.<br>
-    <i>Example:</i> Desktop 2.1 stereo speakers or external Bluetooth audio speakers.</li>
-  </ul>
-
-  <h3>1.2.9 Hardware Interfaces: Parallel Port, Serial Port, USB Ports, HDMI, and Expansion Slots</h3>
-  <p>Hardware interfaces serve as the physical connection points and protocol bridges that allow external peripherals and internal expansion cards to communicate with the motherboard and bus system.</p>
-
-  <ul>
-    <li><b>Parallel Port (DB-25):</b> A legacy 25-pin interface that transferred 8 bits of data simultaneously over eight parallel wires. Historically used for connecting older desktop printers and scanners.<br>
-    <i>Example:</i> Legacy IEEE 1284 printer ports.</li>
-
-    <li><b>Serial Port (RS-232 / DB-9):</b> A legacy 9-pin interface that transferred data sequentially one bit at a time over a single signal line. Slower than parallel ports, but reliable over longer cable distances.<br>
-    <i>Example:</i> Legacy industrial modems, serial mice, and network router console ports.</li>
-
-    <li><b>USB (Universal Serial Bus) Ports:</b> The industry-standard plug-and-play interface for connecting peripherals. USB supplies operational power to connected devices while handling high-speed serial data transfers.
-      <ul>
-        <li><i>USB Type-A / Type-B:</i> Traditional rectangular and square connectors.</li>
-        <li><i>USB Type-C:</i> Compact, reversible connector supporting high data transfer speeds, video output signals, and high-wattage power delivery.</li>
-      </ul>
-    </li>
-
-    <li><b>HDMI (High-Definition Multimedia Interface):</b> An all-digital audio/video cable connector interface. It transmits uncompressed ultra-high-definition video signals and multi-channel digital audio over a single cable directly from graphics cards to monitors, TVs, and projectors.</li>
-
-    <li><b>Expansion Slots:</b> Physical motherboard sockets connected directly to the system bus, allowing users to plug in internal add-on hardware cards to expand computer capabilities.
-      <ul>
-        <li><i>PCIe (Peripheral Component Interconnect Express):</i> The dominant high-speed serial bus expansion slot standard. Used for installing high-performance graphics cards (GPUs), high-speed NVMe SSD expansion cards, capture cards, and high-speed Wi-Fi/Ethernet network adapters.</li>
-      </ul>
-    </li>
-  </ul>
+<body bgcolor="#eaf4fb" text="#1a1a1a" link="#0645ad">
+
+<center>
+<a href="TableofContents.html"><font color="#0645ad" size="4"><b>&laquo; Back to Table of Content</b></font></a>
+</center>
+
+<center>
+<table border="0" width="90%" bgcolor="#003366" cellpadding="10">
+<tr><td align="center">
+<font color="#ffffff" size="7" face="Arial, Helvetica, sans-serif"><b>CHAPTER 1</b></font>
+</td></tr>
+</table>
+</center>
+
+<hr size="4" color="#003366" width="90%">
+
+<center>
+<font size="6" color="#003366" face="Georgia, serif"><i><b>Introduction to Computers and Computer Systems</b></i></font>
+</center>
+
+<hr width="90%">
+
+<table width="95%" border="0" cellpadding="15" bgcolor="#ffffff" align="center">
+<tr><td>
+
+<font size="5" color="#004d80"><b>1.1 Introduction of Computer</b></font><br><br>
+<font size="3" face="Verdana, Geneva, sans-serif">
+A computer is an advanced electronic device that accepts raw data as input, stores and processes that data according to a set of programmed instructions, and produces meaningful information as output. Modern society relies heavily on computing infrastructure for everything from global telecommunications to desktop automation.
+</font>
+
+<br><br>
+<font size="4" color="#006699"><b><i>1.1.1 Definition, Characteristics, and Applications of Computer</i></b></font><br><br>
+<font size="3" face="Verdana, Geneva, sans-serif">
+At its foundation, a computer functions under the Input-Process-Output (IPO) model. Raw data (facts, numbers, symbols) enters the machine, undergoes algorithmic manipulation in the central processor, and is converted into structured information usable by humans or other automated systems.
+</font>
+
+<br><br>
+<font size="3" color="#cc3300"><b>Core Characteristics of Computers:</b></font>
+<ul>
+<li><font size="3"><b><u>Speed:</u></b> Computers perform calculations in fractions of a second (nanoseconds and picoseconds). For example, a modern multi-GHz processor executes billions of instructions per second.</font></li><br>
+<li><font size="3"><b><u>Accuracy:</u></b> Computers execute tasks with high precision. Errors generally stem from human programming mistakes or incorrect input data (known as <i>Garbage In, Garbage Out</i> or GIGO).</font></li><br>
+<li><font size="3"><b><u>Diligence:</u></b> Unlike humans, computers do not suffer from physical tiredness, lack of concentration, or boredom. A computer can run repetitive tasks continuously for long durations without degrading operational performance.</font></li><br>
+<li><font size="3"><b><u>Versatility:</u></b> A single computer system can perform vastly different tasks sequentially or simultaneously&mdash;ranging from typing a text document to rendering 3D graphics or analyzing weather patterns.</font></li><br>
+<li><font size="3"><b><u>Storage Capacity:</u></b> Computers store massive volumes of data in compact spaces, using primary volatile memory and non-volatile secondary storage media for quick retrieval.</font></li><br>
+<li><font size="3"><b><u>Automation:</u></b> Once a program is loaded into memory, a computer can execute its instructions sequentially without requiring manual human intervention at every step.</font></li>
+</ul>
+
+<font size="3" color="#cc3300"><b>Key Application Domains:</b></font>
+<ul>
+<li><font size="3"><b>Education:</b> Powering E-learning platforms, virtual classrooms, digital libraries, and academic research database tools.</font></li><br>
+<li><font size="3"><b>Healthcare:</b> Operating diagnostic imaging equipment (CT scanners, MRI machines), patient monitoring software, and electronic medical health records.</font></li><br>
+<li><font size="3"><b>Banking &amp; Finance:</b> Managing Core Banking Systems (CBS), handling global electronic fund transfers (SWIFT), running Automated Teller Machines (ATMs), and executing algorithmic stock trading.</font></li><br>
+<li><font size="3"><b>Science &amp; Engineering:</b> Running Computer-Aided Design (CAD) software for architectural modeling, space exploration simulations, and molecular biology analysis.</font></li><br>
+<li><font size="3"><b>Business &amp; Industry:</b> Automating Enterprise Resource Planning (ERP), inventory management, digital point-of-sale billing, and corporate payroll processing.</font></li>
+</ul>
+
+<font size="4" color="#006699"><b><i>1.1.2 Evolution of Computer Technology</i></b></font><br><br>
+<font size="3" face="Verdana, Geneva, sans-serif">
+The history of computing spans thousands of years, starting with mechanical counting tools like the Abacus (developed around 2500 BCE) and progressing through mechanical calculators like Blaise Pascal's <i>Pascaline</i> (1642) and Charles Babbage's <i>Difference Engine</i> and <i>Analytical Engine</i> in the 19th century. Babbage's Analytical Engine introduced concepts of input, processing, memory, and output, earning him the title of the "Father of Computing."
+</font>
+
+<br><br>
+<font size="3" face="Verdana, Geneva, sans-serif">
+Modern electronic computing is divided into five distinct generations based on underlying hardware technology:
+</font>
+
+<table width="100%" border="1" cellpadding="8" bgcolor="#fff8e7">
+<tr bgcolor="#003366">
+<td><font color="#ffffff"><b>Generation</b></font></td>
+</tr>
+
+<tr><td>
+<font size="3" color="#8b0000"><b>First Generation (1940&ndash;1956): Vacuum Tubes</b></font><br>
+<font size="3">Utilized fragile, heat-producing glass vacuum tubes for circuitry and magnetic drums for memory. These machines were massive, consumed huge amounts of electricity, and were programmed in machine language.</font><br>
+<font size="3"><i>Examples:</i> ENIAC (Electronic Numerical Integrator and Computer), UNIVAC-I, EDVAC.</font>
+</td></tr>
+
+<tr><td>
+<font size="3" color="#8b0000"><b>Second Generation (1956&ndash;1963): Transistors</b></font><br>
+<font size="3">Replaced bulky vacuum tubes with solid-state semiconductor transistors. This reduced computer size, lowered power consumption, and increased processing speeds. Assembly language and early high-level languages like FORTRAN and COBOL were introduced.</font><br>
+<font size="3"><i>Examples:</i> IBM 7094, CDC 1604, UNIVAC 1107.</font>
+</td></tr>
+
+<tr><td>
+<font size="3" color="#8b0000"><b>Third Generation (1964&ndash;1971): Integrated Circuits (ICs)</b></font><br>
+<font size="3">Combined hundreds of microscopic transistors onto a single silicon chip (Integrated Circuit). This micro-miniaturization boosted calculation speeds while drastically lowering production costs. Users interacted with systems using keyboards, monitors, and early operating systems.</font><br>
+<font size="3"><i>Examples:</i> IBM System/360, PDP-8, Honeywell-6000.</font>
+</td></tr>
+
+<tr><td>
+<font size="3" color="#8b0000"><b>Fourth Generation (1971&ndash;Present): Microprocessors (VLSI / ULSI)</b></font><br>
+<font size="3">Utilized Very Large Scale Integration (VLSI) and Ultra Large Scale Integration (ULSI) to place millions&mdash;and eventually billions&mdash;of transistors onto a single microchip (Central Processing Unit). This generation launched personal computers (PCs), laptops, and handheld mobile devices.</font><br>
+<font size="3"><i>Examples:</i> Intel 8086/Pentium series, modern Apple M-series chips, desktop PCs, microcomputers.</font>
+</td></tr>
+
+<tr><td>
+<font size="3" color="#8b0000"><b>Fifth Generation (Present &amp; Beyond): Artificial Intelligence &amp; Quantum Computing</b></font><br>
+<font size="3">Focuses on hardware and software architectures that enable parallel processing, neural networks, machine learning, natural language processing, and quantum mechanics. The goal is to build machines capable of self-learning, pattern recognition, and autonomous decision-making.</font><br>
+<font size="3"><i>Examples:</i> AI supercomputer clusters, quantum processors (Google Sycamore, IBM Quantum), robotics.</font>
+</td></tr>
+</table>
+
+<br>
+<font size="4" color="#006699"><b><i>1.1.3 Measurement Unit of Processing Speed and Storage Unit</i></b></font><br><br>
+<font size="3" face="Verdana, Geneva, sans-serif">
+To evaluate system performance and capacity, computing relies on standardized metric units for data storage and execution speed.
+</font>
+
+<br><br>
+<font size="3" color="#cc3300"><b>Storage Measurement Units:</b></font><br>
+<font size="3">
+The basic unit of digital data is a <b>Bit</b> (Binary Digit), representing a single binary state of 0 or 1. Data storage scales upward in standardized byte multiples:
+</font>
+
+<ul>
+<li><font size="3"><b>1 Nibble</b> = 4 bits</font></li>
+<li><font size="3"><b>1 Byte (B)</b> = 8 bits (stores a single ASCII text character)</font></li>
+<li><font size="3"><b>1 Kilobyte (KB)</b> = 1,024 Bytes (2<sup>10</sup> Bytes)</font></li>
+<li><font size="3"><b>1 Megabyte (MB)</b> = 1,024 KB (2<sup>20</sup> Bytes)</font></li>
+<li><font size="3"><b>1 Gigabyte (GB)</b> = 1,024 MB (2<sup>30</sup> Bytes)</font></li>
+<li><font size="3"><b>1 Terabyte (TB)</b> = 1,024 GB (2<sup>40</sup> Bytes)</font></li>
+<li><font size="3"><b>1 Petabyte (PB)</b> = 1,024 TB (2<sup>50</sup> Bytes)</font></li>
+<li><font size="3"><b>1 Exabyte (EB)</b> = 1,024 PB (2<sup>60</sup> Bytes)</font></li>
+</ul>
+
+<font size="3" color="#cc3300"><b>Processing Speed Measurement Units:</b></font><br>
+<font size="3">
+Processor execution rates were historically measured in instructions per second: <b>MIPS</b> (Millions of Instructions Per Second) or <b>FLOPS</b> (Floating-Point Operations Per Second) for scientific computing. Modern Central Processing Unit speed is primarily measured by internal clock frequency in <b>Hertz (Hz)</b>:
+</font>
+
+<ul>
+<li><font size="3"><b>Megahertz (MHz):</b> Millions of clock cycles per second.</font></li>
+<li><font size="3"><b>Gigahertz (GHz):</b> Billions of clock cycles per second (e.g., a 3.5 GHz CPU completes 3.5 &times; 10<sup>9</sup> cycles per second).</font></li>
+</ul>
+
+<font size="4" color="#006699"><b><i>1.1.4 Super, Mainframe, Mini, and Microcomputers</i></b></font><br><br>
+<font size="3" face="Verdana, Geneva, sans-serif">
+Computers are categorized into four major classes based on processing capacity, physical size, cost, and typical deployment scenarios:
+</font>
+
+<ul>
+<li><font size="3" color="#004d80"><b>Supercomputers:</b></font><br>
+<font size="3">The fastest, largest, and most expensive computers available. Supercomputers use thousands of interconnected parallel processors to solve complex, compute-heavy scientific problems. Performance is measured in Petaflops or Exaflops.</font><br>
+<font size="3"><i>Examples:</i> Frontier (HPE), Fugaku (RIKEN/Fujitsu), Summit (IBM).</font><br>
+<font size="3"><i>Use Cases:</i> Climate simulation, nuclear physics modeling, global weather forecasting, satellite trajectory calculations.</font></li><br><br>
+
+<li><font size="3" color="#004d80"><b>Mainframe Computers:</b></font><br>
+<font size="3">High-performance enterprise computers designed to process massive volumes of concurrent transactions and input/output requests reliably. Mainframes prioritize high data throughput and system availability over pure calculation speed.</font><br>
+<font size="3"><i>Examples:</i> IBM zSeries (z16), UNISYS ClearPath.</font><br>
+<font size="3"><i>Use Cases:</i> Core banking database transactions, airline reservation platforms, national census data processing.</font></li><br><br>
+
+<li><font size="3" color="#004d80"><b>Minicomputers (Midrange Computers):</b></font><br>
+<font size="3">Multi-user systems scaled between personal microcomputers and enterprise mainframes. They support dozens to hundreds of concurrent users within small-to-medium businesses or academic departments.</font><br>
+<font size="3"><i>Examples:</i> DEC VAX series, AS/400 (IBM System i).</font><br>
+<font size="3"><i>Use Cases:</i> Industrial process automation, departmental database hosting, enterprise manufacturing control.</font></li><br><br>
+
+<li><font size="3" color="#004d80"><b>Microcomputers:</b></font><br>
+<font size="3">Single-user computers powered by a single microprocessor chip. They are small, affordable, and common in home, school, and office environments.</font><br>
+<font size="3"><i>Examples:</i> Desktop Personal Computers (PCs), Laptops, Workstations, Tablet computers.</font><br>
+<font size="3"><i>Use Cases:</i> Office document creation, web browsing, multimedia editing, educational software usage.</font></li>
+</ul>
+
+<font size="4" color="#006699"><b><i>1.1.5 Mobile Computing and its Applications</i></b></font><br><br>
+<font size="3" face="Verdana, Geneva, sans-serif">
+Mobile computing is a technology framework that allows users to access, transmit, and process data wirelessly without being anchored to a fixed physical location. It combines mobile hardware (smartphones, tablets, wearables), mobile communication networks (Cellular 4G/5G, Wi-Fi, Bluetooth), and specialized mobile operating systems (Android, iOS).
+</font>
+
+<br><br>
+<font size="3" color="#cc3300"><b>Key Characteristics of Mobile Computing:</b></font>
+<ul>
+<li><font size="3"><b>Portability:</b> Lightweight hardware designed to be carried easily by hand or worn on the body.</font></li>
+<li><font size="3"><b>Wireless Connectivity:</b> Continuous network communication using radio frequencies without physical network cables.</font></li>
+<li><font size="3"><b>Location Awareness:</b> Integrated Global Positioning System (GPS) chips enable location-based services and real-time spatial navigation.</font></li>
+</ul>
+
+<font size="3" color="#cc3300"><b>Applications of Mobile Computing:</b></font>
+<ul>
+<li><font size="3"><b>Mobile Banking (M-Banking):</b> Executing real-time digital fund transfers, balance inquiries, and utility bill payments using mobile wallet apps (e.g., eSewa, Khalti, Google Pay).</font></li><br>
+<li><font size="3"><b>Location-Based Ride-Hailing &amp; Navigation:</b> On-demand transportation platforms (e.g., Pathao, InDrive, Uber) and real-time mapping services (e.g., Google Maps).</font></li><br>
+<li><font size="3"><b>Mobile Commerce (M-Commerce):</b> Browsing, purchasing, and tracking physical goods via mobile storefront apps (e.g., Daraz, Amazon).</font></li><br>
+<li><font size="3"><b>Remote Field Operations &amp; Telemedicine:</b> Enabling remote workers, emergency responders, and field engineers to capture data on-site, upload real-time reports, or consult medical professionals via video calls.</font></li>
+</ul>
+
+</td></tr>
+</table>
+
+<hr size="4" color="#003366" width="90%">
+
+<center>
+<font size="6" color="#003366" face="Georgia, serif"><b>1.2 Computer System and I/O Devices</b></font>
+</center>
+
+<center>
+<Image src="image_agent_tag_7164754555231716368" alt="Structural diagram of computer architecture showing Input Unit, CPU, Main Memory, and Output Unit" caption="Functional block diagram of computer architecture" />
+</center>
+
+<table width="95%" border="0" cellpadding="15" bgcolor="#ffffff" align="center">
+<tr><td>
+
+<font size="3" face="Verdana, Geneva, sans-serif">
+A computer system is an integrated assembly of hardware components and software applications designed to perform data processing tasks. Understanding how these sub-systems communicate requires looking at their architectural blueprints and physical hardware components.
+</font>
+
+<br><br>
+<font size="4" color="#006699"><b><i>1.2.1 Concept of Computer Architecture and Organization</i></b></font><br><br>
+<font size="3">Although closely related, computer architecture and computer organization describe different levels of computer design:</font>
+
+<ul>
+<li><font size="3"><b>Computer Architecture:</b> Refers to the logical and functional attributes of a computer system visible to a programmer. It includes the Instruction Set Architecture (ISA), supported data types, register configurations, addressing modes, and memory access mechanisms.</font><br>
+<font size="3"><i>Example:</i> Deciding whether a processor uses an x86 or ARM instruction set.</font></li><br><br>
+
+<li><font size="3"><b>Computer Organization:</b> Refers to the operational hardware units and their physical interconnections that implement the architectural specifications. It focuses on signal timings, bus structures, memory control logic, and physical circuit layouts.</font><br>
+<font size="3"><i>Example:</i> Designing a specific 3.2 GHz circuit board with a 12 MB L3 cache to execute an ARM instruction set.</font></li>
+</ul>
+
+<font size="3">
+The dominant baseline model for modern general-purpose computing is the <b>Von Neumann Architecture</b>. It dictates that both program instructions and working data reside together in a shared central memory space, fetched sequentially by the central processor over a shared system bus.
+</font>
+
+<br><br>
+<font size="4" color="#006699"><b><i>1.2.2 Components of Computer System</i></b></font><br><br>
+<font size="3">A complete computer system consists of five hardware units working together:</font>
+
+<ul>
+<li><font size="3"><b>Input Unit:</b> Hardware peripherals that capture external data/commands from human operators or environmental sensors and convert them into binary machine signals.</font></li><br>
+<li><font size="3"><b>Output Unit:</b> Peripherals that take processed binary data from the computer system and translate it into human-readable text, graphics, sound, or physical actions.</font></li><br>
+<li><font size="3"><b>Processing Unit (CPU):</b> The primary engine that executes software instructions, performs arithmetic/logical operations, and coordinates data flow across all other units.</font></li><br>
+<li><font size="3"><b>Memory Unit (Primary Memory):</b> High-speed internal semiconductor storage that holds currently executing program code, operating system files, and active data for fast access by the processor.</font></li><br>
+<li><font size="3"><b>Storage Unit (Secondary Memory):</b> High-capacity non-volatile storage media designed to preserve data, software applications, and files long-term, even when the computer system is powered off.</font></li>
+</ul>
+
+<font size="4" color="#006699"><b><i>1.2.3 Microprocessor: Basic Concepts, Clock Speed, Word Length, Components, and Functions</i></b></font><br><br>
+<font size="3">A microprocessor is an integrated circuit built on a single semiconductor microchip that contains the complete Central Processing Unit (CPU) of a computer system.</font>
+
+<br><br>
+<font size="3" color="#cc3300"><b>Core Metrics of Microprocessors:</b></font>
+<ul>
+<li><font size="3"><b>Clock Speed:</b> The internal frequency generator signal that synchronizes execution steps within the microprocessor. Measured in Gigahertz (GHz), a higher clock speed allows more instruction steps per second.</font></li><br>
+<li><font size="3"><b>Word Length (Word Size):</b> The maximum number of binary bits a microprocessor can process or transfer in a single parallel clock cycle (e.g., 32-bit vs. 64-bit architectures). A 64-bit CPU can process 64 bits of data at once and address vastly larger RAM capacities than a 32-bit CPU.</font></li>
+</ul>
+
+<font size="3" color="#cc3300"><b>Primary Internal Components of a Microprocessor:</b></font>
+<ul>
+<li><font size="3"><b>Arithmetic Logic Unit (ALU):</b> Performs execution of fundamental operations, including arithmetic calculations (addition, subtraction, multiplication) and logical comparisons (AND, OR, NOT, equality checks).</font></li><br>
+<li><font size="3"><b>Control Unit (CU):</b> Acts as the central supervisor. It fetches program instructions from main memory, decodes them into control signals, and directs the movement of data between the ALU, registers, and external peripherals.</font></li><br>
+<li><font size="3"><b>Register Array:</b> Small, high-speed internal storage locations inside the CPU die used to hold temporary data values, instruction memory addresses, and status flags during active execution cycles (e.g., Program Counter, Accumulator, Instruction Register).</font></li>
+</ul>
+
+<font size="4" color="#006699"><b><i>1.2.4 Bus System: Data Bus, Address Bus, and Control Bus</i></b></font><br><br>
+<font size="3">A bus system is a collection of parallel physical wires or printed circuit board traces used to transmit signal data, memory addresses, and control commands between the CPU, primary memory, and peripheral expansion units.</font>
+
+<br><br>
+<font size="3">The system bus is divided into three functional signal lines:</font>
+
+<ul>
+<li><font size="3"><b>Data Bus:</b> A <i>bidirectional</i> line group that transfers actual binary data payload values back and forth between the CPU, RAM, and storage controllers. The width of the data bus (e.g., 64 bits) dictates how much data can be moved in a single transfer cycle.</font></li><br>
+<li><font size="3"><b>Address Bus:</b> A <i>unidirectional</i> line group driven exclusively by the CPU to select specific physical memory address locations or I/O ports for reading or writing operations. The width of the address bus determines the system's maximum addressable memory capacity (2<sup>N</sup> addressable bytes, where N is line width).</font></li><br>
+<li><font size="3"><b>Control Bus:</b> A set of individual signal lines that convey command timing signals, system status checks, interrupt requests, and read/write execution commands generated by the Control Unit (e.g., MEMORY READ, I/O WRITE, BUS RESET).</font></li>
+</ul>
+
+<font size="4" color="#006699"><b><i>1.2.5 Primary Memory: Definition, RAM, ROM, Cache, Buffer, Types of RAM and ROM</i></b></font><br><br>
+<font size="3">Primary Memory (main memory) refers to semiconductor storage accessible directly by the CPU via the internal system bus. It holds active operating system instructions, running applications, and working data required for immediate execution.</font>
+
+<br><br>
+<font size="3" color="#cc3300"><b>Random Access Memory (RAM):</b></font><br>
+<font size="3">A <i>volatile</i> memory workspace that allows data to be read from or written to any physical address location in roughly the same amount of time. RAM requires constant electrical power to maintain its stored data; turning off the system clears its contents.</font>
+<ul>
+<li><font size="3"><b>SRAM (Static RAM):</b> Uses transistor flip-flop circuits to store binary bits. SRAM is fast, does not require periodic electronic refreshing, and is expensive&mdash;making it ideal for internal CPU cache structures.</font></li><br>
+<li><font size="3"><b>DRAM (Dynamic RAM):</b> Uses miniaturized single-transistor and capacitor pairs to store data as electrical charges. Because capacitors leak charge over time, DRAM requires periodic electronic refresh cycles every few milliseconds. DRAM offers high density at a lower cost, making it the primary standard for main memory modules (e.g., DDR4, DDR5 RAM).</font></li>
+</ul>
+
+<font size="3" color="#cc3300"><b>Read-Only Memory (ROM):</b></font><br>
+<font size="3">A <i>non-volatile</i> semiconductor memory format designed to retain factory-written boot code (such as System BIOS/UEFI firmware) permanently, even when system power is disconnected.</font>
+<ul>
+<li><font size="3"><b>PROM (Programmable ROM):</b> Blank ROM chips that can be written to once using a specialized high-voltage programming device. Once written, the contents cannot be altered.</font></li><br>
+<li><font size="3"><b>EPROM (Erasable Programmable ROM):</b> ROM chips whose contents can be erased by exposing the chip die to intense ultraviolet (UV) light through a quartz window, allowing it to be reprogrammed.</font></li><br>
+<li><font size="3"><b>EEPROM (Electrically Erasable Programmable ROM):</b> Modern non-volatile memory that can be erased and rewritten electrically byte-by-byte without physical removal from the circuit board (used in modern flash BIOS microchips).</font></li>
+</ul>
+
+<font size="3" color="#cc3300"><b>Cache Memory:</b></font><br>
+<font size="3">A small, extremely fast SRAM buffer situated physically close to or directly inside the CPU die. Cache stores copies of frequently accessed instructions and data from main DRAM, reducing processor wait times. Modern microprocessors use multi-tiered caches: <b>L1 Cache</b> (fastest, smallest, built into each CPU core), <b>L2 Cache</b> (slightly larger and slower), and <b>L3 Cache</b> (shared across all CPU cores on the chip).</font><br>
+<font size="3"><i>Real-World Analogy:</i> Think of RAM as a bookshelf in your office, while Cache is the small stack of papers sitting directly on your desk for immediate reference.</font>
+
+<br><br>
+<font size="3" color="#cc3300"><b>Data Buffer:</b></font><br>
+<font size="3">A temporary block of physical memory reserved to hold data while it is being transferred between two devices operating at different speeds, or between hardware devices with different priorities (e.g., a printer buffer holding print jobs sent from a fast CPU).</font>
+
+<br><br>
+<font size="4" color="#006699"><b><i>1.2.6 Secondary Memory: Definition, Magnetic Disk, Flash Memory, Optical Disk, External Storage Device, and Memory Stick</i></b></font><br><br>
+<font size="3">Secondary memory refers to non-volatile, persistent storage devices situated outside the primary system bus. Secondary memory preserves software, files, and operating systems permanently, offering lower costs per gigabyte at slower access speeds than primary RAM.</font>
+
+<ul>
+<li><font size="3"><b>Magnetic Disk (Hard Disk Drive - HDD):</b> Uses rotating aluminum or glass platters coated with magnetic material. Read/write heads hover over microscopic tracks to change magnetic polarities representing binary bits. HDDs offer high capacity at low cost, but mechanical components make them susceptible to physical shock and slower read/write speeds.</font></li><br>
+<li><font size="3"><b>Flash Memory:</b> Solid-state non-volatile storage that uses floating-gate NAND integrated circuits to retain data electronically without moving parts. Flash storage powers Solid State Drives (SSDs), offering faster read/write speeds, lower power consumption, and better drop resistance than traditional HDDs.</font></li><br>
+<li><font size="3"><b>Optical Disks:</b> Circular plastic disks that record data using microscopic pits and lands burned into a reflective aluminum layer, read back using focused laser diodes.
+<ul>
+<li><font size="3"><i>CD (Compact Disc):</i> ~700 MB storage capacity.</font></li>
+<li><font size="3"><i>DVD (Digital Versatile Disc):</i> ~4.7 GB (Single Layer) to 8.5 GB (Dual Layer) capacity.</font></li>
+<li><font size="3"><i>Blu-ray Disc (BD):</i> Uses short-wavelength blue-violet lasers to store 25 GB to 100+ GB of high-definition video data.</font></li>
+</ul>
+</font></li><br>
+<li><font size="3"><b>External Storage Devices:</b> Portable desktop enclosures housing external HDDs or external NVMe SSDs, connected via high-speed USB or Thunderbolt interfaces for portable data backups.</font></li><br>
+<li><font size="3"><b>Memory Stick / USB Flash Drive:</b> Compact, thumb-sized portable storage drives using flash memory chips integrated with a standard USB connector plug.</font></li>
+</ul>
+
+<font size="4" color="#006699"><b><i>1.2.7 Input Devices</i></b></font><br><br>
+<font size="3">Input devices capture external signals, human interactions, or paper document data and translate them into binary format for processing.</font>
+
+<ul>
+<li><font size="3"><b>Keyboard:</b> The primary alphanumeric input device. Pressing a key closes a matrix circuit, sending a distinct scan-code signal to the system controller.</font><br>
+<font size="3"><i>Example:</i> A standard 104-key QWERTY layout desktop keyboard.</font></li><br><br>
+
+<li><font size="3"><b>Mouse:</b> A hand-held pointing device that detects two-dimensional movement across a surface using an optical sensor LED, translating that movement into screen cursor motion.</font><br>
+<font size="3"><i>Example:</i> A dual-button optical mouse with a center scroll wheel.</font></li><br><br>
+
+<li><font size="3"><b>Scanner:</b> An optical input device that scans physical paper documents or photographs and converts them into digital bitmap image files.</font><br>
+<font size="3"><i>Example:</i> A desktop flatbed document scanner.</font></li><br><br>
+
+<li><font size="3"><b>Light Pen:</b> A light-sensitive stylus connected to a display monitor. It detects vector screen positioning when its tip passes over display phosphors or screen pixels.</font><br>
+<font size="3"><i>Example:</i> Stylus tools used on specialized CRT engineering graphics displays.</font></li><br><br>
+
+<li><font size="3"><b>OMR (Optical Mark Reader):</b> An optical scanner that detects light reflection levels off paper sheets to identify pre-designated marked areas (such as pencil bubbles).</font><br>
+<font size="3"><i>Example:</i> Automated scoring machines for multiple-choice exams.</font></li><br><br>
+
+<li><font size="3"><b>OCR (Optical Character Recognition):</b> A combination of scanner hardware and software algorithms that reads printed or handwritten text characters on paper images and converts them into editable text documents.</font><br>
+<font size="3"><i>Example:</i> Digitizing printed historical books into searchable PDF files.</font></li><br><br>
+
+<li><font size="3"><b>BCR (Barcode Reader):</b> A handheld optical sensor that shines a red laser or LED light across black-and-white parallel lines (barcodes), measuring reflected light patterns to read product code numbers.</font><br>
+<font size="3"><i>Example:</i> Point-of-Sale inventory checkout scanners in retail stores.</font></li><br><br>
+
+<li><font size="3"><b>MICR (Magnetic Ink Character Recognition):</b> A specialized reader system that reads characters printed with magnetic iron-oxide ink. Used primarily in the banking industry to validate financial checks.</font><br>
+<font size="3"><i>Example:</i> Bank check processing machines reading routing and account numbers.</font></li><br><br>
+
+<li><font size="3"><b>Touch Screen:</b> An interactive display screen overlaid with a touch-sensitive panel (capacitive or resistive) that senses physical finger gestures as input coordinates.</font><br>
+<font size="3"><i>Example:</i> Modern smartphone displays and interactive ATM touch panels.</font></li><br><br>
+
+<li><font size="3"><b>Microphone:</b> An acoustic transducer device that converts physical sound waves into electrical audio signals, digitized by a computer sound card.</font><br>
+<font size="3"><i>Example:</i> A noise-canceling headset microphone used for VoIP calls.</font></li><br><br>
+
+<li><font size="3"><b>Digital Camera:</b> An optical device that focuses light through glass lenses onto an electronic image sensor (CCD or CMOS array), capturing photos or videos directly as digital files.</font><br>
+<font size="3"><i>Example:</i> A mirrorless digital camera or integrated smartphone camera module.</font></li>
+</ul>
+
+<font size="4" color="#006699"><b><i>1.2.8 Output Devices</i></b></font><br><br>
+
+<center>
+<Image src="image_agent_tag_7164754555231716489" alt="Collection of computer hardware output devices including desktop monitors, printers, and speakers" caption="Standard computer hardware output peripherals" />
+</center>
+
+<br>
+<font size="3">Output devices translate processed binary data from a computer system into human-readable visual text, graphics, hard-copy prints, or audible sound signals.</font>
+
+<br><br>
+<font size="3" color="#cc3300"><b>1. Display Monitors (Soft-Copy Output):</b></font>
+<ul>
+<li><font size="3"><b>LCD (Liquid Crystal Display):</b> Flat-panel monitors that use liquid crystal molecules sandwiched between polarizing glass plates. Electrical currents tilt the crystals to pass or block light, illuminated by a Cold Cathode Fluorescent Lamp (CCFL) backlight.</font></li><br>
+<li><font size="3"><b>LED (Light Emitting Diode):</b> An enhanced version of LCD technology that replaces CCFL tubes with energy-efficient Light Emitting Diodes (LEDs) for backlighting. This offers thinner display profiles, higher color contrast, and lower energy usage.</font></li>
+</ul>
+
+<font size="3" color="#cc3300"><b>2. Printers (Hard-Copy Output):</b></font>
+<ul>
+<li><font size="3"><b>Dot Matrix Printer (Impact Printer):</b> Uses small metal pins that strike an inked fabric ribbon against paper to produce text made of individual dots. They are noisy and produce low-resolution prints, but can print multi-part carbon copy forms.</font><br>
+<font size="3"><i>Example:</i> Bank receipt printers and utility billing carbon copy machines.</font></li><br><br>
+
+<li><font size="3"><b>Inkjet Printer (Non-Impact Printer):</b> Sprays microscopic drops of liquid ink through fine nozzles onto paper sheets to construct high-resolution text and color graphics.</font><br>
+<font size="3"><i>Example:</i> Desktop home color photo printers.</font></li><br><br>
+
+<li><font size="3"><b>Laser Printer (Non-Impact Printer):</b> Uses a rotating drum, static electricity, a focused laser beam, and dry black/colored powdered ink (toner). The laser creates an electrostatic image on the drum, toner adheres to the charged areas, and hot rollers fuse the powder onto paper for fast, sharp output.</font><br>
+<font size="3"><i>Example:</i> High-volume commercial office printers.</font></li>
+</ul>
+
+<font size="3" color="#cc3300"><b>3. Speakers (Audio Output):</b></font>
+<ul>
+<li><font size="3">Electromechanical transducers that convert analog audio signals from a sound card into physical sound waves using a voice coil and speaker cone.</font><br>
+<font size="3"><i>Example:</i> Desktop 2.1 stereo speakers or external Bluetooth audio speakers.</font></li>
+</ul>
+
+<font size="4" color="#006699"><b><i>1.2.9 Hardware Interfaces: Parallel Port, Serial Port, USB Ports, HDMI, and Expansion Slots</i></b></font><br><br>
+<font size="3">Hardware interfaces serve as the physical connection points and protocol bridges that allow external peripherals and internal expansion cards to communicate with the motherboard and bus system.</font>
+
+<ul>
+<li><font size="3"><b>Parallel Port (DB-25):</b> A legacy 25-pin interface that transferred 8 bits of data simultaneously over eight parallel wires. Historically used for connecting older desktop printers and scanners.</font><br>
+<font size="3"><i>Example:</i> Legacy IEEE 1284 printer ports.</font></li><br><br>
+
+<li><font size="3"><b>Serial Port (RS-232 / DB-9):</b> A legacy 9-pin interface that transferred data sequentially one bit at a time over a single signal line. Slower than parallel ports, but reliable over longer cable distances.</font><br>
+<font size="3"><i>Example:</i> Legacy industrial modems, serial mice, and network router console ports.</font></li><br><br>
+
+<li><font size="3"><b>USB (Universal Serial Bus) Ports:</b> The industry-standard plug-and-play interface for connecting peripherals. USB supplies operational power to connected devices while handling high-speed serial data transfers.
+<ul>
+<li><font size="3"><i>USB Type-A / Type-B:</i> Traditional rectangular and square connectors.</font></li>
+<li><font size="3"><i>USB Type-C:</i> Compact, reversible connector supporting high data transfer speeds, video output signals, and high-wattage power delivery.</font></li>
+</ul>
+</font></li><br>
+
+<li><font size="3"><b>HDMI (High-Definition Multimedia Interface):</b> An all-digital audio/video cable connector interface. It transmits uncompressed ultra-high-definition video signals and multi-channel digital audio over a single cable directly from graphics cards to monitors, TVs, and projectors.</font></li><br>
+
+<li><font size="3"><b>Expansion Slots:</b> Physical motherboard sockets connected directly to the system bus, allowing users to plug in internal add-on hardware cards to expand computer capabilities.
+<ul>
+<li><font size="3"><i>PCIe (Peripheral Component Interconnect Express):</i> The dominant high-speed serial bus expansion slot standard. Used for installing high-performance graphics cards (GPUs), high-speed NVMe SSD expansion cards, capture cards, and high-speed Wi-Fi/Ethernet network adapters.</font></li>
+</ul>
+</font></li>
+</ul>
+
+</td></tr>
+</table>
+
+<br>
+<center><font size="2" color="#666666"><i>End of Chapter 1</i></font></center>
+
+</body>
 </html>
+```
